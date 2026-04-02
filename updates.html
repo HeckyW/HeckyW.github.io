@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>News & Updates | The Scholarly Editorial</title>
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Inter:wght@100..900&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "background": "#f9f9f7", "primary": "#635d5a", "primary-fixed": "#e9e1dc", "primary-container": "#e9e1dc", "on-secondary": "#fff8f0", "secondary-fixed-dim": "#e4d2b2", "surface-tint": "#635d5a", "on-secondary-fixed-variant": "#675a41", "outline": "#767c79", "on-surface-variant": "#5a605e", "on-surface": "#2d3432", "on-error": "#fff7f6", "surface-bright": "#f9f9f7", "on-error-container": "#742410", "surface-variant": "#dee4e0", "outline-variant": "#adb3b0", "tertiary-container": "#f8f6c6", "surface": "#f9f9f7", "secondary-dim": "#5e5239", "on-primary-container": "#56514d", "on-primary-fixed-variant": "#605a57", "tertiary-fixed": "#f8f6c6", "surface-container-highest": "#dee4e0", "primary-fixed-dim": "#dbd3ce", "on-background": "#2d3432", "tertiary-fixed-dim": "#e9e8b9", "inverse-surface": "#0c0f0e", "error": "#9e422c", "on-primary": "#fff6f1", "error-container": "#fe8b70", "on-tertiary-fixed": "#4b4b29", "on-tertiary-fixed-variant": "#686843", "surface-container-lowest": "#ffffff", "on-tertiary-container": "#5d5e39", "surface-container": "#ecefec", "on-secondary-fixed": "#493e27", "tertiary": "#61613c", "tertiary-dim": "#555531", "surface-container-low": "#f2f4f2", "inverse-primary": "#ffffff", "on-primary-fixed": "#433e3b", "surface-dim": "#d4dcd8", "secondary-container": "#f3e0c0", "on-secondary-container": "#5d5037", "surface-container-high": "#e5e9e6", "inverse-on-surface": "#9c9d9b", "error-dim": "#5c1202", "secondary": "#6b5d44", "on-tertiary": "#fdfccb", "secondary-fixed": "#f3e0c0", "primary-dim": "#57514e"
+            },
+            fontFamily: {
+              "headline": ["Newsreader", "serif"],
+              "body": ["Inter", "sans-serif"],
+              "label": ["Inter", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            line-height: 1;
+        }
+        body {
+            background-color: #f9f9f7;
+            color: #2d3432;
+            -webkit-font-smoothing: antialiased;
+        }
+        @keyframes slideInLeft { from { transform: translateX(-100%); opacity: 0; } to { transform: translateX(0); opacity: 1; } }
+        @keyframes slideInRight { from { transform: translateX(100%); opacity: 0; } to { transform: translateX(0); opacity: 1; } }
+        @keyframes slideOutLeft { from { transform: translateX(0); opacity: 1; } to { transform: translateX(-100%); opacity: 0; } }
+        @keyframes slideOutRight { from { transform: translateX(0); opacity: 1; } to { transform: translateX(100%); opacity: 0; } }
+        .animate-slide-in-left { animation: slideInLeft 0.5s ease-out forwards; }
+        .animate-slide-in-right { animation: slideInRight 0.5s ease-out forwards; }
+        .animate-slide-out-left { animation: slideOutLeft 0.5s ease-out forwards; }
+        .animate-slide-out-right { animation: slideOutRight 0.5s ease-out forwards; }
+    </style>
+</head>
+<body class="font-body selection:bg-secondary-container selection:text-on-secondary-container">
+    <nav class="fixed top-0 w-full z-50 bg-[#F9F9F7]/70 dark:bg-stone-900/70 backdrop-blur-xl shadow-[0_20px_40px_rgba(45,52,50,0.06)]">
+        <div class="flex justify-between items-center px-12 py-6 max-w-screen-2xl mx-auto">
+            <div class="font-headline font-bold text-[#635d5a] dark:text-stone-200 text-2xl tracking-tighter cursor-pointer transition-all active:opacity-70" onclick="event.preventDefault(); document.body.classList.add('animate-slide-out-right'); setTimeout(() => { window.location.href='index.html'; }, 500);">
+                Heqi Wang
+            </div>
+            <div class="hidden md:flex items-center space-x-12">
+                <ul class="flex space-x-8 font-body uppercase tracking-widest text-xs">
+                    <li><a class="text-[#635d5a]/70 dark:text-stone-400 hover:text-primary transition-all duration-300" href="index.html" onclick="event.preventDefault(); document.body.classList.add('animate-slide-out-right'); setTimeout(() => { window.location.href='index.html'; }, 500);">About</a></li>
+                    <li><a class="text-[#6b5d44] dark:text-[#E5D3B3] border-b-2 border-[#6b5d44] pb-1 transition-all duration-300 hover:opacity-80" href="updates.html">Updates</a></li>
+                    <li><a class="text-[#635d5a]/70 dark:text-stone-400 hover:text-primary transition-all duration-300" href="publications.html" onclick="event.preventDefault(); document.body.classList.add('animate-slide-out-left'); setTimeout(() => { window.location.href='publications.html'; }, 500);">Research</a></li>
+                    <li><a class="text-[#635d5a]/70 dark:text-stone-400 hover:text-primary transition-all duration-300" href="projects.html" onclick="event.preventDefault(); document.body.classList.add('animate-slide-out-left'); setTimeout(() => { window.location.href='projects.html'; }, 500);">Projects</a></li>
+                </ul>
+                <div class="h-6 w-px bg-outline-variant/20"></div>
+                <a class="bg-primary text-on-primary px-6 py-2 rounded-lg font-body text-sm tracking-wide hover:opacity-90 transition-all scale-95 duration-200" href="#">Contact</a>
+            </div>
+            <div class="md:hidden cursor-pointer transition-all active:opacity-70 text-[#635d5a]">
+                <span class="material-symbols-outlined" data-icon="menu">menu</span>
+            </div>
+        </div>
+    </nav>
+    <main class="pt-32 pb-24 px-8 md:px-16 lg:px-24 max-w-screen-2xl mx-auto">
+        <header class="mb-24 lg:mb-32">
+            <div class="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-8">
+                <div class="max-w-3xl">
+                    <h1 class="font-headline text-6xl md:text-6xl text-primary tracking-tighter leading-[0.9] mb-8">
+                        News & <br/><span class="italic text-secondary">Updates</span>
+                    </h1>
+                </div>
+                <div class="max-w-sm">
+                    <p class="text-on-surface-variant font-body leading-relaxed text-sm">
+                        A chronological log of milestones and ongoing stuff, mostly in the academic world.
+                    </p>
+                </div>
+            </div>
+        </header>
+        <div class="space-y-32" id="all-updates-container">
+            
+        </div>
+        <div class="mt-32 flex justify-center">
+            <button class="font-headline italic text-2xl text-secondary hover:text-primary transition-colors group">
+                Browse the Archive
+                <div class="h-0.5 w-0 group-hover:w-full bg-secondary transition-all duration-300 mt-1"></div>
+            </button>
+        </div>
+    </main>
+    <footer class="w-full border-t border-stone-200/20 bg-[#F9F9F7] dark:bg-stone-900 mt-24">
+        <div class="flex flex-col md:flex-row justify-between items-center py-16 px-12 max-w-screen-2xl mx-auto">
+            <div class="font-body text-xs font-light tracking-wide text-[#635d5a] dark:text-stone-400 mb-8 md:mb-0">
+                © 2026 Heqi Wang. Powered by Gemini and Stitch. All Intellectual Contributions Reserved.
+            </div>
+            <div class="flex gap-12 items-center">
+                <a class="font-body text-xs font-light tracking-wide text-[#635d5a]/70 hover:text-[#6b5d44] transition-all hover:underline underline-offset-4 decoration-1" href="#">ORCID</a>
+                <a class="font-body text-xs font-light tracking-wide text-[#635d5a]/70 hover:text-[#6b5d44] transition-all hover:underline underline-offset-4 decoration-1" href="#">Google Scholar</a>
+                <a class="font-body text-xs font-light tracking-wide text-[#635d5a]/70 hover:text-[#6b5d44] transition-all hover:underline underline-offset-4 decoration-1" href="#">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

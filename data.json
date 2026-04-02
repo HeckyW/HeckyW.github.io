@@ -1,0 +1,79 @@
+{
+  "updates": [
+    {
+      "date": "April 2026",
+      "title": "Birth of This Website",
+      "description": "This website is built using Gemini and Google Stitch, without any prior HTML knowledge. Therefore, a decent human-in-the-loop example of AI-aided web design projects :-)"
+    },
+    {
+      "date": "OCTOBER 2025",
+      "title": "Midterm Review Passed!",
+      "description": "Presented my doctoral study so far in the past two years. And now a PhD candidate."
+    },
+    {
+      "date": "July 2025",
+      "title": "Conference Oral Presentation",
+      "description": "Presented the accepted paper at the International Conference on Advanced Systems in Public Transport (CASPT) in Kyoto, on the multi-line short-term passenger loading prediction via GNN."
+    },
+    {
+      "date": "March 2025",
+      "title": "Paper Accepted by CASPT",
+      "description": "Paper 'Multi-line Short-term Onboard Passenger Loading Prediction via Relational Multi-graph Convolutional-recurrent Networks' was accepted for oral presentation!"
+    }
+  ],
+  "research": [
+    {
+      "year": "2023",
+      "type": "Journal Article",
+      "title": "Double-battery configuration method for electric bus operation in cold regions",
+      "venue": "Transportation Research Part E: Logistics and Transportation Review, 180, 103362",
+      "description": "In this study, we propose a double-battery configuration approach for EBs operating in cold regions with substantial temperature variations between seasons. The method involves utilizing a higher-capacity battery during winter months and a lower-capacity battery for summer operations. ",
+      "date": "Published: December 2023",
+      "doi": "https://doi.org/10.1016/j.tre.2023.103362"
+    },
+    {
+      "year": "2022",
+      "type": "Journal Article",
+      "title": "Optimal charging pile configuration and charging scheduling for electric bus routes",
+      "venue": "Sustainability, 15(9), 7375",
+      "description": "This paper considers the influence of ambient temperature on battery charging performance, and collaboratively optimizes the number of charging piles in the bus depot and the scheduling problem of EB charging.",
+      "date": "Published: April 2023",
+        "doi": "https://doi.org/10.3390/su15097375"
+    },
+    {
+      "year": "2022",
+      "type": "Journal Article",
+      "title": "A state of health estimation method for electric vehicle Li-ion batteries using GA-PSO-SVR",
+      "venue": "Complex & Intelligent Systems, 8(3), 2167-3182",
+      "description": "In this study, the random forest algorithm is first used to find the most important health factors to lithium-ion batteries based on the dataset released by National Aeronautics and Space Administration (NASA). Then the support vector regression (SVR) algorithm is developed to predict the SOH of a lithium-ion battery. The genetic algorithm-particle swarm optimization (GA-PSO) algorithm is brought forward to optimize the parameter values of the SVR, which could improve the estimation accuracy and convergence speed. ",
+      "date": "Published: January 2022",
+      "doi": "https://link.springer.com/article/10.1007/s40747-021-00639-9"
+    }
+  ],
+  "projects": [
+    {
+      "title": "The Cartography of Silent Archives",
+      "category": "01 — Fieldwork",
+      "description": "An exploration into the marginalized narratives within 18th-century maritime logs. This project utilizes machine learning to identify linguistic patterns that suggest undocumented social structures.",
+      "image": "assets/project1.png"
+    },
+    {
+      "title": "Materiality of Digital Shadows",
+      "category": "Ongoing Series",
+      "description": "Investigating the physical environmental impact of cloud computing through a lens of speculative archaeology.",
+      "image": "assets/project2.png"
+    },
+    {
+      "title": "Ink & Algorithm",
+      "category": "Generative Art",
+      "description": "A series of computational generative art pieces that mimic the entropy of physical ink aging on parchment.",
+      "image": "assets/project2.png"
+    },
+    {
+      "title": "Ethical Scaffolding",
+      "category": "Framework",
+      "description": "A collaborative framework for interdisciplinary researchers to assess algorithmic bias in historical data curation.",
+      "image": "assets/project3.png"
+    }
+  ]
+}

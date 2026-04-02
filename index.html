@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Heqi Wang</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,700;1,6..72,400;1,6..72,700&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">tailwind.config = {darkMode: "class", theme: {extend: {colors: {"on-secondary-container": "#5d5037", "primary-container": "#e9e1dc", "surface-bright": "#f9f9f7", "primary-dim": "#57514e", "surface-container-highest": "#dee4e0", "outline-variant": "#adb3b0", "error-dim": "#5c1202", "surface-container-lowest": "#ffffff", "on-surface-variant": "#5a605e", "tertiary-dim": "#555531", "on-error": "#fff7f6", "tertiary-fixed": "#f8f6c6", "surface-variant": "#dee4e0", "on-tertiary-fixed": "#4b4b29", "tertiary-fixed-dim": "#e9e8b9", "secondary-fixed-dim": "#e4d2b2", "on-surface": "#2d3432", "on-tertiary": "#fdfccb", "surface-container": "#ecefec", "surface-tint": "#635d5a", "on-background": "#2d3432", "primary-fixed-dim": "#dbd3ce", "primary-fixed": "#e9e1dc", "inverse-primary": "#ffffff", "secondary-dim": "#5e5239", "on-tertiary-container": "#5d5e39", outline: "#767c79", secondary: "#6b5d44", "inverse-on-surface": "#9c9d9b", "surface-dim": "#d4dcd8", "secondary-fixed": "#f3e0c0", "on-primary-fixed": "#433e3b", "secondary-container": "#f3e0c0", error: "#9e422c", primary: "#635d5a", "on-error-container": "#742410", "on-secondary-fixed-variant": "#675a41", "inverse-surface": "#0c0f0e", "on-primary-container": "#56514d", "surface-container-high": "#e5e9e6", "on-primary": "#fff6f1", surface: "#f9f9f7", "tertiary-container": "#f8f6c6", "surface-container-low": "#f2f4f2", "on-secondary-fixed": "#493e27", background: "#f9f9f7", "error-container": "#fe8b70", "on-primary-fixed-variant": "#605a57", "on-tertiary-fixed-variant": "#686843", tertiary: "#61613c", "on-secondary": "#fff8f0"}, fontFamily: {headline: ["Newsreader"], body: ["Inter"], label: ["Inter"], display: "Newsreader"}, borderRadius: {DEFAULT: "1rem", lg: "2rem", xl: "3rem", full: "9999px"}}}};</script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3 { font-family: 'Newsreader', serif; }
+        .tonal-shift-only { border: none !important; }
+        @keyframes slideInLeft { from { transform: translateX(-100%); opacity: 0; } to { transform: translateX(0); opacity: 1; } }
+        @keyframes slideInRight { from { transform: translateX(100%); opacity: 0; } to { transform: translateX(0); opacity: 1; } }
+        .slide-left-entry { animation: slideInLeft 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards; }
+        .slide-right-entry { animation: slideInRight 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards; }
+        @keyframes slideOutLeft { from { transform: translateX(0); opacity: 1; } to { transform: translateX(-100%); opacity: 0; } }
+        @keyframes slideOutRight { from { transform: translateX(0); opacity: 1; } to { transform: translateX(100%); opacity: 0; } }
+        .slide-left-exit { animation: slideOutRight 0.4s ease-in forwards; }
+        .slide-right-exit { animation: slideOutLeft 0.4s ease-in forwards; }
+
+        .animate-slide-in-right {
+            animation: slideInFromRight 0.6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+        }
+        .animate-slide-out-left {
+            animation: slideOutToLeft 0.6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+        }
+        main {
+            overflow-x: hidden;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface selection:bg-secondary-container selection:text-on-secondary-container" data-mode="connect">
+    <nav class="fixed top-0 w-full z-50 bg-[#F9F9F7]/70 dark:bg-stone-900/70 backdrop-blur-xl shadow-[0_20px_40px_rgba(45,52,50,0.06)]">
+        <div class="flex justify-between items-center px-12 py-6 max-w-screen-2xl mx-auto">
+            <span class="font-['Newsreader'] font-bold text-[#635d5a] dark:text-stone-200 text-2xl tracking-tighter">Heqi Wang<br/></span>
+            <div class="hidden md:flex items-center gap-10">
+                <a class="text-[#6b5d44] dark:text-[#E5D3B3] border-b-2 border-[#6b5d44] pb-1 font-['Inter'] uppercase tracking-widest text-xs cursor-pointer transition-all active:opacity-70 hover:text-secondary hover:border-secondary" href="index.html">About</a>
+                <a class="text-[#635d5a]/70 dark:text-stone-400 font-['Inter'] uppercase tracking-widest text-xs hover:text-[#6b5d44] transition-colors duration-300 cursor-pointer transition-all active:opacity-70 hover:text-secondary hover:border-b-2 hover:border-secondary" href="updates.html" onclick="event.preventDefault(); document.body.classList.add('slide-right-exit'); setTimeout(() => { window.location.href='updates.html'; }, 500);">Updates</a>
+                <a class="text-[#635d5a]/70 dark:text-stone-400 font-['Inter'] uppercase tracking-widest text-xs hover:text-[#6b5d44] transition-colors duration-300 cursor-pointer transition-all active:opacity-70 hover:text-secondary hover:border-b-2 hover:border-secondary" href="publications.html" onclick="event.preventDefault(); document.body.classList.add('slide-right-exit'); setTimeout(() => { window.location.href='publications.html'; }, 500);">Research</a>
+                <a class="text-[#635d5a]/70 dark:text-stone-400 font-['Inter'] uppercase tracking-widest text-xs hover:text-[#6b5d44] transition-colors duration-300 cursor-pointer transition-all active:opacity-70 hover:text-secondary hover:border-b-2 hover:border-secondary" href="projects.html" onclick="event.preventDefault(); document.body.classList.add('slide-right-exit'); setTimeout(() => { window.location.href='projects.html'; }, 500);">Projects</a>
+                <a class="ml-4 px-6 py-2 bg-secondary text-on-secondary rounded-full font-['Inter'] uppercase tracking-widest text-xs hover:opacity-90 transition-all cursor-pointer" href="mailto:heqi.wang@aalto.fi">Contact</a>
+            </div>
+            <button class="md:hidden p-2 hover:opacity-80 transition-opacity">
+                <span class="material-symbols-outlined text-[#635d5a] dark:text-stone-300">menu</span>
+            </button>
+        </div>
+    </nav>
+    <main class="pt-32 animate-slide-in-right">
+        <section class="px-6 md:px-12 max-w-[1440px] mx-auto mb-24 md:mb-48" id="about">
+            <div class="grid md:grid-cols-12 gap-12 items-end">
+                <div class="md:col-span-8 order-2 md:order-1">
+                    <h1 class="text-6xl md:text-6xl lg:text-7xl font-headline tracking-tighter text-primary leading-tight mb-8">WANG,<br/><span class="italic text-secondary">Heqi</span></h1>
+                    <div class="max-w-2xl md:ml-auto">
+                        <p class="text-base md:text-xl font-body leading-relaxed text-on-surface-variant font-light mb-8">
+                            A doctoral researcher since 2023 at the Department of Built Environment, School of Engineering, Aalto University. Prior to that, I received a M.Sc. in Transport & Planning (2023) at TU Delft, a B.Eng. in Traffic Engineering (2020) and a B.A. in Business English (2020) at Jilin University. My current work focuses on the identification of abnormal patterns in multimodal transportation networks by utilizing ML/AI techniques.
+                        </p>
+                        <div class="flex flex-wrap items-center justify-between max-w-lg mb-8">
+                            <a class="text-[#635d5a] hover:text-secondary transition-colors group flex flex-col items-center gap-1" href="mailto:heqi.wang@aalto.fi" title="Email">
+                                <span class="material-symbols-outlined text-2xl">mail</span>
+                                <span class="text-[10px] font-label uppercase tracking-widest opacity-0 group-hover:opacity-60 transition-opacity">Email</span>
+                            </a>
+                            <a class="text-[#635d5a] hover:text-secondary transition-colors group flex flex-col items-center gap-1" href="https://www.linkedin.com/in/heqiwang/" title="LinkedIn">
+                                <span class="material-symbols-outlined text-2xl">person_search</span>
+                                <span class="text-[10px] font-label uppercase tracking-widest opacity-0 group-hover:opacity-60 transition-opacity">LinkedIn</span>
+                            </a>
+                            <a class="text-[#635d5a] hover:text-secondary transition-colors group flex flex-col items-center gap-1" href="https://scholar.google.com/citations?user=dXlUkbkAAAAJ&hl=en" title="Google Scholar">
+                                <span class="material-symbols-outlined text-2xl">school</span>
+                                <span class="text-[10px] font-label uppercase tracking-widest opacity-0 group-hover:opacity-60 transition-opacity">Scholar</span>
+                            </a>
+                            <a class="text-[#635d5a] hover:text-secondary transition-colors group flex flex-col items-center gap-1" href="https://orcid.org/0000-0002-5571-3505" title="ORCID">
+                                <span class="material-symbols-outlined text-2xl">fingerprint</span>
+                                <span class="text-[10px] font-label uppercase tracking-widest opacity-0 group-hover:opacity-60 transition-opacity">ORCID</span>
+                            </a>
+                            <a class="text-[#635d5a] hover:text-secondary transition-colors group flex flex-col items-center gap-1" href="#" title="GitHub">
+                                <span class="material-symbols-outlined text-2xl">terminal</span>
+                                <span class="text-[10px] font-label uppercase tracking-widest opacity-0 group-hover:opacity-60 transition-opacity">GitHub</span>
+                            </a>
+                            <a class="text-[#635d5a] hover:text-secondary transition-colors group flex flex-col items-center gap-1" href="#" title="Curriculum Vitae">
+                                <span class="material-symbols-outlined text-2xl">description</span>
+                                <span class="text-[10px] font-label uppercase tracking-widest opacity-0 group-hover:opacity-60 transition-opacity">CV</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:col-span-4 order-1 md:order-2 flex justify-center md:justify-end">
+                    <div class="relative group">
+                        <div class="absolute inset-0 bg-secondary-container rounded-full scale-105 opacity-20 blur-2xl group-hover:opacity-40 transition-opacity"></div>
+                        <img alt="Jane Doe" class="w-48 h-48 md:w-80 md:h-80 rounded-full object-cover contrast-125 border-4 border-surface shadow-xl relative z-10" data-alt="Minimalist circular cartoon avatar" src="assets/Image.png"/>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="px-6 md:px-12 max-w-[1440px] mx-auto mb-24 md:mb-26" id="news">
+            <div class="flex flex-col md:flex-row md:items-baseline gap-4 border-b border-outline-variant mb-12 pb-4">
+                <h2 class="text-3xl md:text-4xl font-headline italic">Latest Updates</h2>
+            </div>
+            <div class="grid md:grid-cols-3 gap-12 lg:gap-24" id="home-updates-container">
+            </div>
+            <div class="flex justify-end mt-12">
+                <a class="group flex items-center gap-2 text-secondary font-label uppercase tracking-[0.2em] text-xs hover:opacity-80 transition-all" href="updates.html">
+                    <span>More</span>
+                    <span class="transition-transform group-hover:translate-x-1">→</span>
+                </a>
+            </div>
+        </section>
+        <section class="bg-surface-container-low py-24 md:py-24">
+            <div class="max-w-[1440px] mx-auto px-6 md:px-12">
+                <div class="grid md:grid-cols-2 gap-24 lg:gap-32">
+                    <div id="research">
+                        <div class="flex items-center gap-4 mb-16">
+                            <span class="text-xs font-label uppercase tracking-[0.2em] text-secondary">01</span>
+                            <h2 class="text-4xl md:text-4xl font-headline">Research</h2>
+                        </div>
+                        <div class="space-y-24" id="home-research-container">
+                            
+                        </div>
+                    </div>
+                    <div id="projects">
+                        <div class="flex items-center gap-4 mb-16">
+                            <span class="text-xs font-label uppercase tracking-[0.2em] text-secondary">02</span>
+                            <h2 class="text-4xl md:text-4xl font-headline">Projects</h2>
+                        </div>
+                        <div class="space-y-24" id="home-projects-container">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="w-full border-t border-stone-200/20 bg-[#F9F9F7] dark:bg-stone-900">
+        <div class="max-w-screen-2xl mx-auto flex flex-col md:flex-row justify-between items-center py-16 px-12 mt-24 md:items-end">
+            <div class="flex flex-col items-center md:items-start gap-4 mb-8 md:mb-0">
+                <p class="font-['Inter'] text-xs font-light tracking-wide text-[#635d5a] dark:text-stone-400">
+                    © 2026 Heqi Wang. Powered by Gemini and Stitch. All Intellectual Contributions Reserved.
+                </p>
+            </div>
+            <div class="flex gap-8 font-['Inter'] text-xs font-light tracking-wide">
+                <a class="text-[#6b5d44] underline underline-offset-4 opacity-80 hover:opacity-100 hover:text-[#635d5a] transition-all" href="#">ORCID</a>
+                <a class="text-[#635d5a]/50 opacity-80 hover:opacity-100 hover:text-[#635d5a] transition-all" href="#">Google Scholar</a>
+                <a class="text-[#635d5a]/50 opacity-80 hover:opacity-100 hover:text-[#635d5a] transition-all" href="#">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
