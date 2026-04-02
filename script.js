@@ -115,7 +115,7 @@ fetch('data.json')
         homeProjectsContainer.innerHTML = projects.slice(0, 2).map(item => `
             <div class="group">
                 <div class="aspect-[4/5] overflow-hidden mb-8 bg-surface-container-highest">
-                    <img alt="${item.title}" class="w-full h-full object-cover grayscale hover:scale-105 transition-transform duration-1000" src="${item.image}"/>
+                    <img alt="${item.title}" class="w-full h-full object-cover  hover:scale-105 transition-transform duration-1000" src="${item.image}"/>
                 </div>
                 <h3 class="text-2xl font-headline mb-4">${item.title}</h3>
                 <p class="text-on-surface-variant font-light leading-relaxed">${item.description}</p>
