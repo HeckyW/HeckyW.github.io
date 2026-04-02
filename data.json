@@ -52,27 +52,27 @@
   ],
   "projects": [
     {
-      "title": "The Cartography of Silent Archives",
-      "category": "01 — Fieldwork",
-      "description": "An exploration into the marginalized narratives within 18th-century maritime logs. This project utilizes machine learning to identify linguistic patterns that suggest undocumented social structures.",
+      "title": "Web Design with Gemini & Stitch",
+      "category": "01 — AI-aided Web Design",
+      "description": "An exploration into vibe coding and human-in-the-loop web design using Gemini and Google Stitch, without any prior HTML knowledge.",
       "image": "assets/project1.png"
     },
     {
-      "title": "Materiality of Digital Shadows",
+      "title": "Chiffon Cake Baking",
       "category": "Ongoing Series",
-      "description": "Investigating the physical environmental impact of cloud computing through a lens of speculative archaeology.",
+      "description": "A personal project documenting the process of perfecting a chiffon cake recipe, exploring the science of baking and the art of flavor combinations.",
       "image": "assets/project2.png"
     },
     {
-      "title": "Ink & Algorithm",
-      "category": "Generative Art",
-      "description": "A series of computational generative art pieces that mimic the entropy of physical ink aging on parchment.",
+      "title": "Ai-aided deCision tool for seamless mUltiModal nEtwork and traffic managemeNt (ACUMEN)",
+      "category": "02 — Research Project",
+      "description": "A research project focused on developing an AI-aided decision tool for seamless multimodal network and traffic management, aiming to optimize transportation systems and enhance urban mobility.",
       "image": "assets/project2.png"
     },
     {
-      "title": "Ethical Scaffolding",
-      "category": "Framework",
-      "description": "A collaborative framework for interdisciplinary researchers to assess algorithmic bias in historical data curation.",
+      "title": "LLM-based Reasoning for Traffic Anomalies",
+      "category": "02 — Research Project",
+      "description": "A research initiative investigating the application of large language models (LLMs) for reasoning and analysis of traffic anomalies, with the goal of improving traffic management and incident response strategies.",
       "image": "assets/project3.png"
     }
   ]
