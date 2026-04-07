@@ -40,24 +40,28 @@
     </style>
 </head>
 <body class="font-body selection:bg-secondary-fixed selection:text-on-secondary-fixed overflow-x-hidden">
-    <nav class="fixed top-0 w-full z-50 bg-[#F9F9F7]/70 dark:bg-stone-900/70 backdrop-blur-xl shadow-[0_20px_40px_rgba(45,52,50,0.06)]">
-        <div class="flex justify-between items-center px-12 py-6 max-w-screen-2xl mx-auto">
-            <div class="font-headline font-bold text-[#635d5a] dark:text-stone-200 text-2xl tracking-tighter cursor-pointer transition-all active:opacity-70" onclick="document.body.classList.add('slide-right-exit'); setTimeout(() => { window.location.href='index.html'; }, 500);">
+    <nav class="fixed top-0 w-full z-50 bg-[#F9F9F7]/90 dark:bg-stone-900/90 backdrop-blur-xl shadow-[0_20px_40px_rgba(45,52,50,0.06)]">
+        <div class="flex justify-between items-center px-6 md:px-12 py-6 max-w-screen-2xl mx-auto">
+            
+            <div class="font-headline font-bold text-[#635d5a] dark:text-stone-200 text-2xl tracking-tighter cursor-pointer transition-all active:opacity-70" onclick="event.preventDefault(); document.querySelector('main').classList.add('animate-slide-out-left'); setTimeout(() => { window.location.href = 'index.html'; }, 500);">
                 Heqi Wang
             </div>
-            <div class="hidden md:flex items-center space-x-12">
-                <ul class="flex space-x-8 items-center font-body uppercase tracking-widest text-xs">
-                    <li><a class="text-[#635d5a]/70 dark:text-stone-400 hover:text-[#6b5d44] hover:opacity-100 transition-all duration-300 relative group" href="index.html" onclick="event.preventDefault(); document.body.classList.add('slide-left-exit'); setTimeout(() => { window.location.href='index.html'; }, 500);">About</a></li>
-                    <li><a class="text-[#635d5a]/70 dark:text-stone-400 hover:text-[#6b5d44] hover:opacity-100 transition-all duration-300 relative group" href="updates.html" onclick="event.preventDefault(); document.body.classList.add('slide-left-exit'); setTimeout(() => { window.location.href='updates.html'; }, 500);">Updates</a></li>
-                    <li><a class="text-[#6b5d44] dark:text-[#E5D3B3] border-b-2 border-[#6b5d44] pb-1 hover:opacity-80 transition-opacity" href="publications.html">Research</a></li>
-                    <li><a class="text-[#635d5a]/70 dark:text-stone-400 hover:text-[#6b5d44] hover:opacity-100 transition-all duration-300 relative group" href="projects.html" onclick="event.preventDefault(); document.body.classList.add('slide-right-exit'); setTimeout(() => { window.location.href='projects.html'; }, 500);">Projects</a></li>
+
+            <div id="nav-menu" class="hidden absolute top-[75px] left-0 w-full bg-[#F9F9F7]/95 dark:bg-stone-900/95 backdrop-blur-xl shadow-xl py-8 px-6 md:static md:w-auto md:bg-transparent md:shadow-none md:py-0 md:px-0 md:flex md:flex-row md:items-center md:space-x-12 md:space-y-0 space-y-6">
+                <ul class="flex flex-col md:flex-row md:space-x-8 space-y-6 md:space-y-0 font-body uppercase tracking-widest text-xs items-center">
+                    <li><a class="text-[#635d5a]/70 dark:text-stone-400 hover:text-[#6b5d44] transition-all duration-300 hover:opacity-80" href="index.html">About</a></li>
+                    <li><a class="text-[#635d5a]/70 dark:text-stone-400 hover:text-[#6b5d44] transition-all duration-300 hover:opacity-80" href="updates.html">Updates</a></li>
+                    <li><a class="text-[#635d5a]/70 dark:text-stone-400 hover:text-[#6b5d44] transition-all duration-300 hover:opacity-80" href="publications.html">Research</a></li>
+                    <li><a class="text-[#635d5a]/70 dark:text-stone-400 hover:text-[#6b5d44] transition-all duration-300 hover:opacity-80" href="projects.html">Projects</a></li>
                 </ul>
-                <div class="h-6 w-px bg-outline-variant/20"></div>
-                <a class="bg-primary text-on-primary px-6 py-2 rounded-lg font-body text-sm tracking-wide hover:opacity-90 transition-all scale-95 duration-200" href="mailto:contact@scholarlyeditorial.edu">Contact</a>
+                <div class="hidden md:block h-6 w-px bg-outline-variant/20"></div>
+                <a class="bg-primary text-on-primary px-6 py-2 rounded-lg font-body text-sm tracking-wide hover:opacity-90 transition-all scale-95 duration-200 text-center block w-full md:w-auto" href="mailto:scholar@university.edu">Contact</a>
             </div>
-            <button class="md:hidden text-primary cursor-pointer transition-all active:opacity-70">
-                <span class="material-symbols-outlined">menu</span>
+
+            <button id="mobile-menu-btn" class="md:hidden cursor-pointer transition-all active:opacity-70 text-[#635d5a]">
+                <span class="material-symbols-outlined text-3xl">menu</span>
             </button>
+
         </div>
     </nav>
     <main class="pt-32 pb-24 px-8 md:px-16 lg:px-24 max-w-screen-2xl mx-auto">

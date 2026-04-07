@@ -38,19 +38,28 @@
     </style>
 </head>
 <body class="bg-surface text-on-surface selection:bg-secondary-container selection:text-on-secondary-container" data-mode="connect">
-    <nav class="fixed top-0 w-full z-50 bg-[#F9F9F7]/70 dark:bg-stone-900/70 backdrop-blur-xl shadow-[0_20px_40px_rgba(45,52,50,0.06)]">
-        <div class="flex justify-between items-center px-12 py-6 max-w-screen-2xl mx-auto">
-            <span class="font-['Newsreader'] font-bold text-[#635d5a] dark:text-stone-200 text-2xl tracking-tighter">Heqi Wang<br/></span>
-            <div class="hidden md:flex items-center gap-10">
-                <a class="text-[#6b5d44] dark:text-[#E5D3B3] border-b-2 border-[#6b5d44] pb-1 font-['Inter'] uppercase tracking-widest text-xs cursor-pointer transition-all active:opacity-70 hover:text-secondary hover:border-secondary" href="index.html">About</a>
-                <a class="text-[#635d5a]/70 dark:text-stone-400 font-['Inter'] uppercase tracking-widest text-xs hover:text-[#6b5d44] transition-colors duration-300 cursor-pointer transition-all active:opacity-70 hover:text-secondary hover:border-b-2 hover:border-secondary" href="updates.html" onclick="event.preventDefault(); document.body.classList.add('slide-right-exit'); setTimeout(() => { window.location.href='updates.html'; }, 500);">Updates</a>
-                <a class="text-[#635d5a]/70 dark:text-stone-400 font-['Inter'] uppercase tracking-widest text-xs hover:text-[#6b5d44] transition-colors duration-300 cursor-pointer transition-all active:opacity-70 hover:text-secondary hover:border-b-2 hover:border-secondary" href="publications.html" onclick="event.preventDefault(); document.body.classList.add('slide-right-exit'); setTimeout(() => { window.location.href='publications.html'; }, 500);">Research</a>
-                <a class="text-[#635d5a]/70 dark:text-stone-400 font-['Inter'] uppercase tracking-widest text-xs hover:text-[#6b5d44] transition-colors duration-300 cursor-pointer transition-all active:opacity-70 hover:text-secondary hover:border-b-2 hover:border-secondary" href="projects.html" onclick="event.preventDefault(); document.body.classList.add('slide-right-exit'); setTimeout(() => { window.location.href='projects.html'; }, 500);">Projects</a>
-                <a class="ml-4 px-6 py-2 bg-secondary text-on-secondary rounded-full font-['Inter'] uppercase tracking-widest text-xs hover:opacity-90 transition-all cursor-pointer" href="mailto:heqi.wang@aalto.fi">Contact</a>
+    <nav class="fixed top-0 w-full z-50 bg-[#F9F9F7]/90 dark:bg-stone-900/90 backdrop-blur-xl shadow-[0_20px_40px_rgba(45,52,50,0.06)]">
+        <div class="flex justify-between items-center px-6 md:px-12 py-6 max-w-screen-2xl mx-auto">
+            
+            <div class="font-headline font-bold text-[#635d5a] dark:text-stone-200 text-2xl tracking-tighter cursor-pointer transition-all active:opacity-70" onclick="event.preventDefault(); document.querySelector('main').classList.add('animate-slide-out-left'); setTimeout(() => { window.location.href = 'index.html'; }, 500);">
+                Heqi Wang
             </div>
-            <button class="md:hidden p-2 hover:opacity-80 transition-opacity">
-                <span class="material-symbols-outlined text-[#635d5a] dark:text-stone-300">menu</span>
+
+            <div id="nav-menu" class="hidden absolute top-[75px] left-0 w-full bg-[#F9F9F7]/95 dark:bg-stone-900/95 backdrop-blur-xl shadow-xl py-8 px-6 md:static md:w-auto md:bg-transparent md:shadow-none md:py-0 md:px-0 md:flex md:flex-row md:items-center md:space-x-12 md:space-y-0 space-y-6">
+                <ul class="flex flex-col md:flex-row md:space-x-8 space-y-6 md:space-y-0 font-body uppercase tracking-widest text-xs items-center">
+                    <li><a class="text-[#635d5a]/70 dark:text-stone-400 hover:text-[#6b5d44] transition-all duration-300 hover:opacity-80" href="index.html">About</a></li>
+                    <li><a class="text-[#635d5a]/70 dark:text-stone-400 hover:text-[#6b5d44] transition-all duration-300 hover:opacity-80" href="updates.html">Updates</a></li>
+                    <li><a class="text-[#635d5a]/70 dark:text-stone-400 hover:text-[#6b5d44] transition-all duration-300 hover:opacity-80" href="publications.html">Research</a></li>
+                    <li><a class="text-[#635d5a]/70 dark:text-stone-400 hover:text-[#6b5d44] transition-all duration-300 hover:opacity-80" href="projects.html">Projects</a></li>
+                </ul>
+                <div class="hidden md:block h-6 w-px bg-outline-variant/20"></div>
+                <a class="bg-primary text-on-primary px-6 py-2 rounded-lg font-body text-sm tracking-wide hover:opacity-90 transition-all scale-95 duration-200 text-center block w-full md:w-auto" href="mailto:scholar@university.edu">Contact</a>
+            </div>
+
+            <button id="mobile-menu-btn" class="md:hidden cursor-pointer transition-all active:opacity-70 text-[#635d5a]">
+                <span class="material-symbols-outlined text-3xl">menu</span>
             </button>
+
         </div>
     </nav>
     <main class="pt-32 animate-slide-in-right">

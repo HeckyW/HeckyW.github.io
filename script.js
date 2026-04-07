@@ -1,3 +1,19 @@
+// --- MOBILE MENU TOGGLE ---
+document.addEventListener('DOMContentLoaded', () => {
+    const mobileBtn = document.getElementById('mobile-menu-btn');
+    const navMenu = document.getElementById('nav-menu');
+
+    if (mobileBtn && navMenu) {
+        mobileBtn.addEventListener('click', () => {
+            // Toggles the 'hidden' class to show/hide the menu
+            navMenu.classList.toggle('hidden');
+            // Toggles flex-col so the items stack vertically on mobile
+            navMenu.classList.toggle('flex');
+            navMenu.classList.toggle('flex-col');
+        });
+    }
+});
+
 fetch('data.json')
   .then(response => response.json())
   .then(data => {
