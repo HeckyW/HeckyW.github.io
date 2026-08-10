@@ -49,10 +49,10 @@ fetch('data.json')
     // --- 2. RESEARCH / PUBLICATIONS AUTOMATION ---
     const research = data.research;
     
-    // Home Page: Just show the first 2 research items
+    // Home Page: Just show the first 4 research items
     const homeResearchContainer = document.getElementById('home-research-container');
     if (homeResearchContainer) {
-        homeResearchContainer.innerHTML = research.slice(0, 2).map(item => `
+        homeResearchContainer.innerHTML = research.slice(0, 4).map(item => `
             <article class="group">
                 <span class="inline-block px-3 py-1 bg-secondary-container text-on-secondary-container text-[10px] font-label uppercase tracking-widest rounded-sm mb-4">${item.type}</span>
                 <h3 class="text-2xl font-headline mb-4 group-hover:text-secondary transition-colors">${item.title}</h3>
