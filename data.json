@@ -1,12 +1,17 @@
 {
   "updates": [
     {
+      "date": "August 2026",
+      "title": "First PhD Journal Paper",
+      "description": "Paper 'Network-wide fine-grained passenger loading prediction via dynamic relational spatiotemporal deep graph neural networks' was published in Transportation research Part C."
+    },
+    {
       "date": "April 2026",
       "title": "Birth of This Website",
       "description": "This website is built using Gemini and Google Stitch, without any prior HTML knowledge. Therefore, a decent human-in-the-loop example of AI-aided web design projects :-)"
     },
     {
-      "date": "OCTOBER 2025",
+      "date": "October 2025",
       "title": "Midterm Review Passed!",
       "description": "Presented my doctoral study so far in the past two years. And now a PhD candidate."
     },
@@ -22,6 +27,15 @@
     }
   ],
   "research": [
+    {
+      "year": "2026",
+      "type": "Journal Article",
+      "title": "Network-wide fine-grained passenger loading prediction via dynamic relational spatiotemporal deep graph neural networks",
+      "venue": "Transportation Research Part C: Emerging Technologies, 192, 105905",
+      "description": "This study proposes the Dynamic Relational Graph Convolutional Recurrent Neural Network (DRGCRNN) framework designed for edge-level, fine-grained passenger load forecasting. The results demonstrate that the model effectively captures and predicts the loading patterns of high-frequency transit, providing a scalable template for service-specific real-time crowding monitoring and operational decision support. ",
+      "date": "Published: August 2026",
+      "doi": "https://doi.org/10.1016/j.trc.2026.105905"
+    },
     {
       "year": "2023",
       "type": "Journal Article",
